@@ -12,7 +12,7 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
 
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.purple,
     statusBarIconBrightness: Brightness.dark,
   ));
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
           home: Scaffold(
             body: DoubleBackToCloseApp(
               snackBar: SnackBar(
-                backgroundColor: const Color(0xffF3F5F7),
+                backgroundColor: const Color.fromARGB(255, 152, 7, 157),
                 shape: ShapeBorder.lerp(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(2.0),
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
                 )!,
                 width: 200,
                 behavior: SnackBarBehavior.floating,
-                content: Text(
+                content: const Text(
                   'double tap to exit app',
                   style: TextStyle(
                     color: Colors.purple,
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
                 ),
                 duration: const Duration(seconds: 1),
               ),
-             child: MainScreen(),
+              child: const MainScreen(),
             ),
           ),
         );
