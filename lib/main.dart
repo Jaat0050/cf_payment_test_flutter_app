@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                 content: const Text(
                   'double tap to exit app',
                   style: TextStyle(
-                    color: Colors.purple,
+                    color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
